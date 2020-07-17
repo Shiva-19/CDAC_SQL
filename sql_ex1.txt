@@ -1,0 +1,82 @@
+EXERCISE 1
+create table SEMP
+     (
+      EMPNO CHAR(4),
+      EMPNAME CHAR(20),
+      BASIC FLOAT(9,2),
+      DEPTNO CHAR(2),
+      DEPTHEAD CHAR(4)
+    );
+ create table SDEPT
+    (
+      DEPTNO CHAR(2),
+      DEPTNAME CHAR(15)
+     );
+
+ insert into SEMP values('0001','SUNIL','6000','10',NULL),  
+('0002','HIREN','8000','20',NULL),
+('0003','ALI','4000','10','0001'),
+('0004','GEORGE','6000',NULL,'0002');
+
+
+ insert into SDEPT (DEPTNO,DEPTNAME) values(10,'Developement'),(20,'Training');
+--------------------------------------------------------------------------------------
+create table SUPPLIER
+(`S#` varchar(10),
+Sname varchar(30),
+Status int(4),
+City varchar(20)
+);
+insert into Supplier values('S1','Priyanka','10','Paris '),
+('S2','Ruchi','20','Athens'),
+('S3','nikita','30','London');
+
+-----------------------------------------------------------------------------------------
+
+create table PARTS
+(`P#` varchar(10),
+Pname varchar(20),
+Color varchar(20),
+Weight int(4),
+City varchar(10)
+);
+insert into Parts values('P1','mouse','Black','2','Athens'),
+('P2','keyboard','white','2','London'),
+('P3','moniter','Black','3','Paris');
+---------------------------------------------------------------------------------------
+create table PROJECTS
+(`J#` varchar(10),
+Jname varchar(10),
+City varchar(10)
+);
+
+insert into projects values('J1','shopping','athens'),
+('J2','ola_book','athens'),
+('J3','movie_book','athens'),
+('J4','movie_book','London'),
+('J5','movie_book','paris');
+-----------------------------------------------------------------------------------------
+create table SPJ
+(`S#` varchar(10),`
+P#` varchar(10),
+`J#` varchar(10),
+Qty int(10)
+);
+----------------------------------------------------------------------------------------
+ 5) select * from Supplier;
+ 6) select `S#`,Sname from Supplier;
+
+ 7) select pname, color from parts where city="london";
+
+ 10) select * from projects where city="athens";
+
+ 11) select * from parts where weight>=12 and weight<=14;
+ 
+12)select Sname from supplier where status>=20;
+
+ 13)select Sname from supplier where city!="London";
+ 14)select city from supplier;
+
+ 15)select Weight as `Weight in grams`,Weight*1000 AS `weight in milligrams`, Weight/1000 As `Weight in killograms` from parts;
+
+

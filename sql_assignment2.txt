@@ -1,0 +1,19 @@
+Assignment 2
+
+1)CNUM
+
+2)Rating
+
+3) Rows-Tuple , Entity, Opportunity
+   column- attribute , method
+
+4)There is no particular order in which SQL stores the records.
+  Rows of a table are not stored sequentially.
+  Rows of a table are scattered (fragmentated) all over the database server Hard disk .
+  When you insert into a table wherever  the system finds the free space in the database server HD, it will store 
+  the row there the reason that RDBMS does this is to speed up the insert statement.
+  When you select a table , the order of row in the output depends on the row address.
+  When you update a row , if the row length is increasing , then the entire row may be moved to some 
+  other address later when you select from the table,you will find the row at some other position in the output.
+  Therefore it is not possible for to find first five rows in a table.
+
