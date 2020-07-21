@@ -1,0 +1,18 @@
+ASSIGNMENT 6
+
+1)  select * from  orders where odate = '1990-10-03' or odate='1990-10-04';
+    
+     select * from orders where odate between '1990-10-03' and '1990-10-04';
+
+2)   select * from customers where (snum = 1001 or snum =1004);
+
+3)   select * from customers where cname >=' A'  and cname <= 'H';
+
+4)  select * from customers where cname like 'C%';
+ 
+5)   select * from orders where (amt!=0 or amt= NULL);
+
+
+
+
+ 

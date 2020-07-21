@@ -1,0 +1,12 @@
+ASSIGNMENT 8 
+
+1) select onum,snum,0.12 *amt as '12 % of amount' from orders;
+
+2) select city, max(rating) as "highest ranting is" from customers group by city;
+
+3) select rating , cname, cnum from customers order by rating desc;
+
+4)  select count(snum) ,odate from orders group by odate order by snum desc;
+    
+
+  
