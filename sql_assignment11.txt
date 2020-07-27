@@ -1,0 +1,11 @@
+ASSIGNMENT 11
+
+1) select * from orders where cnum = (select cnum from customers where cname = 'cinsers');
+
+2)  select cname , rating from customers where cnum in (select cnum from orders where amt > (select avg(amt) from orders));
+
+3) select  salespeople.Sname ,orders.Snum , sum(amt)
+    from orders,salespeople
+    where orders.Snum = salespeople.Snum
+    group by orders.Snum, salespeople.Sname
+    having sum(amt) > (select max(amt) from orders);
