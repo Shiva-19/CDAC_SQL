@@ -1,0 +1,28 @@
+ASSIGNMENT 17
+
+1) create table orders_new
+     (
+       onum int(4),
+       amt float (7,2),
+       Odate date not null,
+       Cnum int(4),
+       Snum int(4),
+      constraint pk primary key (onum,cnum,snum)
+     );
+
+2) create table salespeople1 
+   ( 
+     comm int(3) default 10, 
+     snum int(4) PRIMARY KEY, 
+     sname varchar2(20)
+     check(substr(upper(sname),1,1) BETWEEN 'A' AND 'B') 
+      );
+
+3) create table orders1 
+   ( onum int(4), 
+     amt number(7,2), 
+     odate date , 
+     cnum int(4) ,
+     snum int(4) , 
+     CONSTRAINT on_cn_sn check(cnum>cnum and cnum>snum)
+   );
