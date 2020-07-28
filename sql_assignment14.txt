@@ -1,13 +1,0 @@
-ASSIGNMENT 14
-
-1)insert into salespeople (sname,city,comm) values('Balno ','San Jose',null);
-
-2) delete from orders where cnum in (select cnum from customers where cname = 'clemes');
-
-3) update  customers set rating=rating+100 where city = 'Rome';
-
-14) UPDATE customersSET snum=  (SELECT snum   FROM salespeople   WHERE sname='serres')WHERE snum =    (SELECT snum     FROM salespeople     WHERE sname='Motika');
-
-
-   
-
