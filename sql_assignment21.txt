@@ -1,0 +1,19 @@
+ASSIGNMENT 21
+
+1) Grant update on customers to Amit;
+
+2) Grant select on orders to manoj ;
+ 
+   Grant select on manoj.orders to priya;
+
+3)  Revoke insert on salespeople from Ajita;
+
+
+4)  create view v1 as select * from customers where rating between 100 and 500;
+
+    Grant insert , update on v1 to abhijeet;
+
+
+5) Create view v2 as SELECT * from customers where rating not in (select min(rating) from customers);
+
+  grant select on v2 to vikram;

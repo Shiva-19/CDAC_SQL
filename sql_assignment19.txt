@@ -1,0 +1,16 @@
+ASSIGNMENT 19
+
+1) create view v1 as select * from customers where rating = (select max(rating) from customers);
+  
+   select * from v1;
+
+2)create view v2 as  select count(snum) as "no of salespeople", city  from salespeople group by city ;
+   
+   select * from v2;
+
+3) Create view v3 as select avg(onum) as "average "  ,count(onum) as "total orders",sname from orders,salespeople where orders.snum = salespeople.snum and salespeople.snum in (select snum    from salespeople ) group by sname;
+
+ select * from v3;
+
+4) select view v4 as select sname ,cname from customers,salespeople where customers.snum = salespeople.snum;
+   
