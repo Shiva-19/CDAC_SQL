@@ -1,0 +1,20 @@
+ASSIGNMENT 18
+
+1) Create table cityorders SELECT onum,
+       amt,
+       snum,
+       cunu,
+       city
+from orders natural customers;
+
+alter table cityorders add constraint onum_fk
+FOREIGN key(onum) REFERENCES orders(onum);
+
+ desc cityorders;
+
+2)alter table cityorders add FOREIGN key(cnum) REFERENCES customers(cnum);
+
+
+ alter copy_orders add FOREIGN key(prev) REFERENCES copy_orders(onum);
+
+ 
